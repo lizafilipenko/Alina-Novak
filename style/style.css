@@ -1,0 +1,316 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/russo-one-v16-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/hind-madurai-v11-latin-regular.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Hind Madurai', sans-serif;
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+:root {
+    --color-brand-light: white;
+    --color-brand-dark: black;
+    --color-red-light: rgb(179, 21, 16);
+    --color-red-dark: rgba(103, 15, 12, 1);
+    --color-primary-dark: rgb(233, 224, 224);
+    --color-primry-light: rgba(243, 211, 210);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--color-brand-dark);
+}
+
+.hidden {
+    position: absolute;
+    left: -10000;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.section {
+    padding: 50px 0;
+    display: flex;
+}
+
+.container {
+    width: 1288px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+span {
+    font-family: 'Russo One', sans-serif;
+}
+
+/* Link */
+.link {
+    color: var(--color-brand-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: var(--color-brand-dark);
+}
+
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 32px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: end;
+    flex-grow: 1;
+    gap: 40px;
+    justify-content: end;
+}
+
+/* hero sections */
+.hero-section {
+    padding: 198px 0;
+    background-image: url('../img/home-page.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.hero-title {
+    font-family: 'Russo One', sans-serif;
+    margin-bottom: 0;
+    word-spacing: 233px;
+    text-transform: uppercase;
+    color: var(--color-brand-light);
+    text-align: center;
+    font-size: 146px;
+    font-weight: 400;
+}
+
+.hero-container {
+    display: flex;
+    gap: 468px;
+}
+
+.section-title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 74px;
+}
+
+.title-center {
+    text-align: center;
+}
+
+.paragraph-title {
+    color: var(--color-brand-light);
+}
+
+.personal-trainer {
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 324px;
+    height: 60px;
+    padding: 18px;
+    text-align: center;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    background-color: var(--color-primry-light);
+}
+
+/* button */
+.button {
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    width: 264px;
+    height: 74px;
+    color: var(--color-brand-light);
+    background-color: var(--color-red-light);
+    border-radius: 60px;
+    cursor: pointer;
+    border: none;
+    margin-left: 290px;
+    margin-top: -30px;
+}
+
+/*.button:first-child {
+    color: var(--color-brand-light);
+    background-color: var(--color-brand-dark);
+}
+*/
+
+.button:hover {
+    box-shadow: -8px 8px 15px rgba(179, 21, 16, 0.404),
+        8px -8px 15px rgba(179, 21, 16, 0.404),
+        -8px -8px 15px rgba(179, 21, 16, 0.404),
+        8px 8px 15px rgba(179, 21, 16, 0.404);
+    /*background-color: transparent;
+    transparent - прозорорий фон*/
+}
+ 
+.button-black {
+    font-family: 'Russo One', sans-serif;
+        text-transform: uppercase;
+        font-size: 24px;
+        width: 264px;
+        height: 74px;
+        color: var(--color-brand-light);
+        background-color: var(--color-brand-dark);
+        border-radius: 60px;
+        cursor: pointer;
+        border: none;
+}
+
+.button-black:hover {
+    box-shadow: -8px 8px 15px rgba(0, 0, 0, 0.404),
+        8px -8px 15px rgba(0, 0, 0, 0.404),
+        -8px -8px 15px rgba(0, 0, 0, 0.404),
+        8px 8px 15px rgba(0, 0, 0, 0.404);
+    /*background-color: transparent;
+    transparent - прозорорий фон*/
+}
+
+/* About me */
+.about-me-container {
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+}
+
+.about-me-content {
+    padding-left: 25px;
+}
+
+/* services */
+h4 {
+    padding: 30px 0 0 0;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+
+.services-card {
+    background-color: var(--color-primary-dark);
+    border-radius: 114px;
+    border: 8px solid var(--color-red-dark);
+    padding: 64px 74px 10px 74px;
+}
+
+.services-card:hover {
+    background-color: var(--color-brand-light);
+}
+
+.services-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Price */
+.price-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-card {
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    background-color: var(--color-primary-dark);
+    padding: 39px 100px 30px 100px;
+    border: 8px solid var(--color-red-dark);
+    border-top-right-radius: 300px;
+    border-bottom-left-radius: 300px;
+    margin: 40px;
+
+}
+
+.price-list {
+    display: inline;
+}
+
+/* contacts */
+h5 {
+    font-family: 'Russo One';
+    font-size: 24px;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.location-container {
+    text-align: end;
+}
+
+/* Footer */
+.footer {
+   background-color: var(--color-primary-dark);
+
+}
+
+.icon-flex {
+    display: flex;
+    gap: 40px;
+}
+
